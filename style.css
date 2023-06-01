@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    /* height: 65px; */
+    background-color: black;
+    color: lightgrey;
+    align-items: center;
+}
+nav ul li{
+    padding: 0px 12px;  
+}
+.logo img{
+    width: 44px;
+    padding: 0 8px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: white;
+}
+.container{
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 15px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 20px;  
+   background-image: url(images/bg1.jpg);
+   background-size:cover;
+   
+}
+.bottom{
+    position: sticky;
+    bottom: 0px;
+    height: 130px ;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songlist{
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 380px;
+}
+.songItem{
+    height: 40px;
+    width: 500px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+    height: 37px;
+    width: 37px;
+    margin: 0px 20px 0px 3px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin:0px 20px;
+}
+.timestamp i{
+    cursor: pointer;
+    
+}
+.songInfo{
+    position: absolute;
+    margin-left: 0px;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+
+
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
